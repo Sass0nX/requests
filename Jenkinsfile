@@ -27,4 +27,16 @@ pipeline{
         }
     }   
 
+    post{
+        always{
+            echo "Aborted u son of a bitch"
+        }
+        success{
+            echo "Success u son of a bitch"
+        }
+        failure{
+            echo "Failure u son of a bitch"
+        }
+    }
+
 }
