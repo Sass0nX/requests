@@ -21,7 +21,7 @@ pipeline{
         stage('Testing'){
             steps{
                 sh '''
-                python3 RestTest.py
+                python3 TestRest.py
                 '''
             }
         }
