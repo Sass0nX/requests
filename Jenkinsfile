@@ -7,7 +7,7 @@ pipeline{
         stage('clone/pull'){
             steps{
                 sh '''
-                git clone $repo
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Sass0nX/requests.git']]])
                 '''
             }
         }
