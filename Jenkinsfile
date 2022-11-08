@@ -29,10 +29,8 @@ pipeline{
 
     post{
         always{
-            sh '''
-            cd /var/jenkins_home/workspace/homeworkJENK/
-            rm -r requests
-            '''
+            echo "d"
+            
         }
         success{
             echo "Success u son of a bitch"
