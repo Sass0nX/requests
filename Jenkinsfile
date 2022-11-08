@@ -6,9 +6,9 @@ pipeline{
     stages{
         stage('clone/pull'){
             steps{
-                sh '''
+                
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Sass0nX/requests.git']]])
-                '''
+                
             }
         }
         stage('Build'){
