@@ -1,9 +1,9 @@
-FROM python:3.9.15-alpine3.16
+FROM python:3.8.15-alpine3.16
 
 WORKDIR /app
 
 COPY . .
 
-RUN "pip install -r requirements.txt"
+RUN pip install -r requirements.txt
 
-CMD ["python", "http_e.py"]
+CMD ["python3", "http_e.py"]

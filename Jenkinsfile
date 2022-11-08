@@ -33,7 +33,7 @@ pipeline{
             
         }
         success{
-            echo "Success u son of a bitch"
+            sh 'docker build -t RequestFromFile .'
         }
         failure{
             echo "Failure u son of a bitch"
