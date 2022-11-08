@@ -29,7 +29,10 @@ pipeline{
 
     post{
         always{
-            echo "Aborted u son of a bitch"
+            sh '''
+            cd /var/jenkins_home/workspace/homeworkJENK/
+            rm -r requests
+            '''
         }
         success{
             echo "Success u son of a bitch"
