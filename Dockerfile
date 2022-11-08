@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN "pip3 install -r requirements.txt"
+RUN "pip install -r requirements.txt"
 
 CMD ["python", "http_e.py"]
